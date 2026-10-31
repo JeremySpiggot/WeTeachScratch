@@ -1,0 +1,31 @@
+const courses = [
+  { tag: 'Beginner', title: 'Scratch Basics', description: 'Learn the interface, sprites, motion, and the core building blocks of coding.' },
+  { tag: 'Logic', title: 'Variables & Conditions', description: 'Teach decisions, checks, and data flow with real logic to power interactive projects.' },
+  { tag: 'Games', title: 'Platformer Design', description: 'Build jumping, movement, enemies, collisions, and game loops from scratch.' },
+  { tag: 'Art', title: 'Animation & Costumes', description: 'Turn characters, scenes, and storytelling into energetic, visual experiences.' },
+  { tag: 'Story', title: 'Narrative Games', description: 'Design story choices, dialogue, backgrounds, and branching scenes.' },
+  { tag: 'Systems', title: 'Combat & RPG Logic', description: 'Add health bars, inventory systems, levels, checkpoints, and progression.' },
+  { tag: 'Audio', title: 'Sound & Music', description: 'Use sound effects and loops to add emotion, feedback, and polish.' },
+  { tag: 'Advanced', title: 'Game Dev Bootcamp', description: 'Combine systems into a full, polished game project and ship your own idea.' }
+];
+
+const courseGrid = document.getElementById('course-grid');
+const yearNode = document.getElementById('year');
+
+if (courseGrid) {
+  courseGrid.innerHTML = courses
+    .map(
+      (course) => `
+        <article class="course-card">
+          <span class="tag">${course.tag}</span>
+          <h3>${course.title}</h3>
+          <p>${course.description}</p>
+        </article>
+      `
+    )
+    .join('');
+}
+
+if (yearNode) {
+  yearNode.textContent = new Date().getFullYear();
+}

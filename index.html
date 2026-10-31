@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="WeTeachScratch is an open-source HTML5 learning platform for teaching people how to code in Scratch through a huge catalog of creative game and app courses."
+    />
+    <title>WeTeachScratch | Learn Scratch by Building Games</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <div class="brand" aria-label="WeTeachScratch logo and home link">
+          <a href="#top" class="brand-link">
+            <img src="assets/logo.svg" alt="WeTeachScratch logo" class="brand-logo" />
+          </a>
+        </div>
+        <nav class="nav" aria-label="Main navigation">
+          <a href="#courses">Courses</a>
+          <a href="#curriculum">Curriculum</a>
+          <a href="#about">Why Scratch</a>
+          <a href="#community">Community</a>
+        </nav>
+        <a href="#courses" class="button button-primary">Start Learning</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Open-source learning platform</span>
+            <h1>Learn to code in Scratch with a huge catalog of courses.</h1>
+            <p>
+              Build games, stories, animations, and logic from the ground up. WeTeachScratch
+              helps beginners go from simple ideas to advanced game systems using Scratch,
+              creativity, and real coding habits.
+            </p>
+            <div class="hero-actions">
+              <a href="#courses" class="button button-primary">Explore courses</a>
+              <a href="#about" class="button button-secondary">Why it works</a>
+            </div>
+            <ul class="hero-stats" aria-label="Project stats">
+              <li><strong>12+</strong><span>Course tracks</span></li>
+              <li><strong>HTML5</strong><span>Open-source site</span></li>
+              <li><strong>MIT</strong><span>Open license</span></li>
+            </ul>
+          </div>
+
+          <div class="hero-card" aria-label="Example course preview">
+            <div class="preview-window">
+              <div class="preview-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="preview-body">
+                <div class="preview-badge">Course Path</div>
+                <h2>Game Dev Bootcamp</h2>
+                <div class="mini-steps">
+                  <span>Learn blocks</span>
+                  <span>Build sprites</span>
+                  <span>Code logic</span>
+                  <span>Ship games</span>
+                </div>
+                <div class="progress-bar">
+                  <span></span>
+                </div>
+                <div class="lesson-list">
+                  <div><span>01</span><p>Scratch basics</p></div>
+                  <div><span>02</span><p>Movement + collisions</p></div>
+                  <div><span>03</span><p>Platformer level design</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="courses" class="courses section-shell">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Courses</span>
+            <h2>A big library of Scratch learning paths</h2>
+          </div>
+          <div id="course-grid" class="course-grid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section id="curriculum" class="curriculum section-shell alt">
+        <div class="container">
+          <div class="section-heading narrow">
+            <span class="eyebrow">Curriculum</span>
+            <h2>From beginner fundamentals to advanced game systems</h2>
+          </div>
+          <div class="curriculum-grid">
+            <article class="curriculum-item">
+              <span class="step-number">01</span>
+              <h3>Build the Basics</h3>
+              <p>Learn motion, looks, sound, events, loops, conditions, and variables.</p>
+            </article>
+            <article class="curriculum-item">
+              <span class="step-number">02</span>
+              <h3>Design Playful Games</h3>
+              <p>Create side-scrollers, clickers, platformers, puzzles, and arcade challenges.</p>
+            </article>
+            <article class="curriculum-item">
+              <span class="step-number">03</span>
+              <h3>Think Like a Developer</h3>
+              <p>Use debugging, decomposition, and problem solving to make projects feel real.</p>
+            </article>
+            <article class="curriculum-item">
+              <span class="step-number">04</span>
+              <h3>Ship Real-World Features</h3>
+              <p>Explore score systems, enemies, inventory, dialogue, story flow, and polished UI.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="why section-shell">
+        <div class="container split-layout">
+          <div>
+            <span class="eyebrow">Why Scratch</span>
+            <h2>Visual coding that keeps learning fun and creative.</h2>
+            <p>
+              Scratch turns coding into a creative playground. Students can see their ideas come
+              alive immediately, which makes it perfect for learners who are curious, artistic, or
+              building games for the first time.
+            </p>
+            <p>
+              This platform blends a structured course flow with project-based learning so students
+              aren't just watching tutorials — they're making their own games and solving their own
+              problems.
+            </p>
+          </div>
+          <div class="feature-box">
+            <h3>What learners will build</h3>
+            <ul>
+              <li>Platformers and side-scrolling adventures</li>
+              <li>Story-driven interactive scenes</li>
+              <li>Custom characters and animated effects</li>
+              <li>Logic puzzles and game systems</li>
+              <li>Original projects from beginner to advanced level</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="community" class="cta section-shell">
+        <div class="container cta-box">
+          <div>
+            <span class="eyebrow">Built for everyone</span>
+            <h2>Open-source, beginner-friendly, and ready for a bigger course library.</h2>
+          </div>
+          <a href="#top" class="button button-primary">Jump in</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© <span id="year"></span> WeTeachScratch. Open source and built for learning.</p>
+        <a href="LICENSE">MIT License</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
